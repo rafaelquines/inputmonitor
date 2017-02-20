@@ -1,9 +1,3 @@
-# inputmonitor
-An Input Monitor for GPIOs on Raspberry PI with Debounce
-
-## Basic Usage
-
-```javascript
 "use strict";
 var InputMonitor = require('inputmonitor');
 
@@ -26,5 +20,3 @@ inputMonitor.onInputChange(inputStatusChanged);
 
 // Start watch
 inputMonitor.start()
-
-```

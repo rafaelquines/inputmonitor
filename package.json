@@ -1,0 +1,28 @@
+{
+  "name": "inputmonitor",
+  "version": "1.0.0",
+  "description": "An Input Monitor for GPIOs on Raspberry PI with Debounce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelquines/inputmonitor.git"
+  },
+  "keywords": [
+    "raspberry",
+    "input",
+    "monitor",
+    "gpio"
+  ],
+  "author": "rafaelquines",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelquines/inputmonitor/issues"
+  },
+  "homepage": "https://github.com/rafaelquines/inputmonitor#readme",
+  "dependencies": {
+    "onoff": "^1.1.2"
+  }
+}
