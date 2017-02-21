@@ -5,6 +5,7 @@ An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio
 
 ```javascript
 "use strict";
+var Gpio = require('pigpio').Gpio;
 var InputMonitor = require('inputmonitor');
 
 // Define constants

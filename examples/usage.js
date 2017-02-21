@@ -1,4 +1,5 @@
 "use strict";
+var Gpio = require('pigpio').Gpio;
 var InputMonitor = require('inputmonitor');
 
 // Define constants
