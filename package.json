@@ -1,8 +1,8 @@
 {
   "name": "inputmonitor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
-  "main": "index.js",
+  "main": "inputmonitor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
