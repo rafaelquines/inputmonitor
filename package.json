@@ -1,7 +1,7 @@
 {
   "name": "inputmonitor",
-  "version": "1.0.0",
-  "description": "An Input Monitor for GPIOs on Raspberry PI with Debounce",
+  "version": "1.0.1",
+  "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/rafaelquines/inputmonitor#readme",
   "dependencies": {
-    "onoff": "^1.1.2"
+    "pigpio": "^0.4.0"
   }
 }
