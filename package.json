@@ -1,28 +1,28 @@
 {
-  "name": "inputmonitor",
-  "version": "1.0.3",
-  "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
-  "main": "inputmonitor.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafaelquines/inputmonitor.git"
-  },
-  "keywords": [
-    "raspberry",
-    "input",
-    "monitor",
-    "gpio"
-  ],
-  "author": "rafaelquines",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rafaelquines/inputmonitor/issues"
-  },
-  "homepage": "https://github.com/rafaelquines/inputmonitor#readme",
-  "dependencies": {
-    "pigpio": "^0.4.0"
-  }
+    "name": "inputmonitor",
+    "version": "1.0.5",
+    "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
+    "main": "inputmonitor.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rafaelquines/inputmonitor.git"
+    },
+    "keywords": [
+        "raspberry",
+        "input",
+        "monitor",
+        "gpio"
+    ],
+    "author": "rafaelquines",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rafaelquines/inputmonitor/issues"
+    },
+    "homepage": "https://github.com/rafaelquines/inputmonitor#readme",
+    "dependencies": {
+        "pigpio": "^0.6.0"
+    }
 }
