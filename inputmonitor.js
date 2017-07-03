@@ -16,7 +16,7 @@ function InputMonitor(gpioNum, pullUpDown, inNumber, inName, inTimeout) {
     this._lastInterruptTime = 0;
     this._isFunction = false;
 }
-s
+
 InputMonitor.prototype.start = function () {
     var that = this;
     this._input.on('interrupt', function (level) {
