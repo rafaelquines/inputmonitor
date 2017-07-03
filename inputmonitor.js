@@ -31,7 +31,7 @@ InputMonitor.prototype.start = function () {
 };
 
 InputMonitor.prototype.onInputChange = function (callback) {
-    this._isFunction = (typeof that._callback === 'function');
+    this._isFunction = (typeof callback === 'function');
     this._callback = callback;
 }
 
