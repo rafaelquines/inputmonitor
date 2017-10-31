@@ -1,6 +1,6 @@
 {
     "name": "inputmonitor",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
     "main": "inputmonitor.js",
     "scripts": {
@@ -24,6 +24,6 @@
     "homepage": "https://github.com/rafaelquines/inputmonitor#readme",
     "dependencies": {
         "pigpio": "^0.6.0",
-        "pigpio-mock": "0.0.1"
+        "pigpio-mock": "git+https://github.com/rafaelquines/pigpio-mock.git"
     }
 }
