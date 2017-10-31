@@ -1,5 +1,5 @@
 "use strict";
-var Gpio = require('pigpio').Gpio;
+var Gpio = process.env.NODE_ENV !== 'production' ? require('pigpio-mock').Gpio : require('pigpio').Gpio;
 
 function InputMonitor(gpioNum, pullUpDown, inNumber, inName, inTimeout) {
     this._gpioNum = gpioNum;
