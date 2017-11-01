@@ -10,16 +10,16 @@ function InputMonitor(gpioNum, pullUpDown, inNumber, inName, inTimeout) {
         mode: Gpio.INPUT,
         pullUpDown: pullUpDown,
         edge: Gpio.EITHER_EDGE
-        // ,
-        // timeout: inTimeout ? inTimeout : 0
+            // ,
+            // timeout: inTimeout ? inTimeout : 0
     });
     this._lastInterruptTime = 0;
     this._isFunction = false;
 }
 
-InputMonitor.prototype.start = function () {
+InputMonitor.prototype.start = function() {
     var that = this;
-    this._input.on('interrupt', function (level) {
+    this._input.on('interrupt', function(level) {
         if (that._isFunction) {
             var interruptTime = Date.now();
             if ((interruptTime - that._lastInterruptTime) >= that._inTimeout) {
@@ -30,9 +30,13 @@ InputMonitor.prototype.start = function () {
     });
 };
 
-InputMonitor.prototype.onInputChange = function (callback) {
+InputMonitor.prototype.onInputChange = function(callback) {
     this._isFunction = (typeof callback === 'function');
     this._callback = callback;
+}
+
+InputMonitor.prototype.setStatus = function(level) {
+    this.Gpio.digitalWrite(level);
 }
 
 module.exports = InputMonitor;
