@@ -36,7 +36,7 @@ InputMonitor.prototype.onInputChange = function(callback) {
 }
 
 InputMonitor.prototype.setStatus = function(level) {
-    this.Gpio.digitalWrite(level);
+    this._input.digitalWrite(level);
 }
 
 module.exports = InputMonitor;
