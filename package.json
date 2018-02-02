@@ -1,6 +1,6 @@
 {
     "name": "inputmonitor",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "An Input Monitor for GPIOs on Raspberry PI with Node.js using pigpio",
     "main": "inputmonitor.js",
     "scripts": {
