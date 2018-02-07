@@ -1,25 +1,9 @@
 "use strict";
+var isRpi = require('detect-rpi');
 
-if ((process.env.NODE_ENV != "development") &&
-    (process.env.NODE_ENV != "production")) {
-    console.error("Invalid environment");
-    console.error("Expected environment: development or production");
-    console.error("Current environment: ", process.env.NODE_ENV);
-    process.exit(1);
-}
-
-var Gpio = process.env.NODE_ENV === 'development' ? require('@rafaelquines/pigpio-mock').Gpio : require('pigpio').Gpio;
+var Gpio = !isRpi() ? require('@rafaelquines/pigpio-mock').Gpio : require('pigpio').Gpio;
 
 function InputMonitor(gpioNum, pullUpDown, inNumber, inName, inTimeout) {
-    if ((process.env.NODE_ENV != "development") &&
-        (process.env.NODE_ENV != "testing") &&
-        (process.env.NODE_ENV != "staging") &&
-        (process.env.NODE_ENV != "production")) {
-        console.error("Invalid environment");
-        console.error("Expected environment: development, testing, staging or production");
-        console.error("Current environment: ", process.env.NODE_ENV);
-        process.exit(1);
-    }
     this._gpioNum = gpioNum;
     this._inNumber = inNumber;
     this._inName = inName;
